@@ -1,0 +1,75 @@
+.container{
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    background-color:#E7F6FE;
+
+    .header{
+        width: 95%;
+        display: flex;
+        justify-content: space-between;
+        height: 70px;
+        align-items: center;
+        .addTodo{
+            width: 100%;
+            display: flex;
+            input{
+                width: 100%;
+                font-size: 100%;
+                border: none;
+            }
+        }
+        img{
+            width: 32px;
+            height: 32px;
+            cursor: pointer;
+        }
+        .addBtn{
+            width: 48px;
+            height: 48px;
+            background-color: #0085FF;
+            border: none;
+            border-radius: 8px;
+            font-size: 38px;
+            color: white;
+            cursor: pointer;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    .description{
+        width: 95%;
+        height: 30px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 900;
+        font-size: 20px;
+        line-height: 23px;
+
+        color: #0085FF;
+
+    }
+    .todos{
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+}
+.container::-webkit-scrollbar {
+    background: rgba(86, 182, 234, 0.38);
+    border-radius: 6px;
+}
+.container::-webkit-scrollbar-thumb {
+    background: #DDEEF8;
+    border-radius: 6px;
+}
+.container::-webkit-scrollbar-track {
+    width: 600px;
+    height: 80%;
+}
